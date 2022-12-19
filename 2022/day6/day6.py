@@ -14,8 +14,6 @@ streamlist = []
 for char in datastreambuffer:
     streamlist.append(char)
     if len(streamlist) > 13:
-        #print(len(list(set(streamlist[-14:]))))
-        #print(list(set(streamlist[-14:])))
         if len(list(set(streamlist[-14:]))) == 14:
             print("P2 marker: " + char + " at position " + str(len(streamlist)))
             break
